@@ -15,7 +15,6 @@ class Feedback extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    positivePercentage: 0,
   };
 
   handleGood = event => {
