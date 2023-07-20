@@ -1,16 +1,19 @@
+import Feedback from 'components/feedback/Feedback';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Feedback initialValue={0} />
     </div>
+
+    // <div>
+    //    <Section title="Please leave feedback">
+    //     <FeedbackOptions options={ } onLeaveFeedback={ }></FeedbackOptions>
+    //   </Section>
+
+    //   <Section title="Statistics">
+    //     <Statistics good={ } neutral={ } bad={ } total={ } positivePercentage={ }/>
+    //   </Section>
+    // </div>
   );
 };
