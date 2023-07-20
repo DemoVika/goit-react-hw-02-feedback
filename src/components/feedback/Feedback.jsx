@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import css from './feedback.module.css';
 
-class Feedback extends React.Component {
+class Feedback extends Component {
   static defaultProps = {
     initialValue: 0,
   };
