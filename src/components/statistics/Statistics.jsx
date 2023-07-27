@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import css from './statistics.module.css';
-import { Notification } from 'components/notification/notification';
 
 export const Statistics = ({
   good,
@@ -11,7 +10,6 @@ export const Statistics = ({
 }) => {
   return (
     <div className={css.statistics}>
-      <Notification message="There is no feedback" total={total} />
       <div style={{ display: total === 0 ? 'none' : 'block' }}>
         <p>Good: {good}</p>
         <p>Neutral: {neutral}</p>
